@@ -1,0 +1,7 @@
+{
+  "jnlg-contact-form": {
+    "confirm": "Your e-mail is confirmed and your contact request was send successfully",
+    "confirmed": "Your e-mail was allready confirmed",
+    "doesNotExist": "Something went wrong :/"
+  }
+}

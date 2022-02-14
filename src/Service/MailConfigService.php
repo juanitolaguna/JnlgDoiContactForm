@@ -12,7 +12,6 @@ use Shopware\Core\System\SystemConfig\SystemConfigService;
 
 final class MailConfigService
 {
-
     private SystemConfigService $systemConfigService;
 
     private EntityRepositoryInterface $cmsSlotRepository;

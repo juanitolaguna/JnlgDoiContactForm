@@ -5,12 +5,22 @@
         <title>#JnlgDoiContactForm# Settings</title>
         <title lang="de-DE">#JnlgDoiContactForm# Einstellungen</title>
 
-        <component name="sw-entity-single-select">
-            <name>mailTemplate</name>
-            <entity>mail_template</entity>
-            <label>Choose a Double Opt in Mail Template</label>
-            <labelProperty>id</labelProperty>
+        <component name="sw-snippet-field">
+            <name>snippetField</name>
+            <label>Confirmation Text</label>
+            <snippet>jnlg-contact-form.confirm</snippet>
+        </component>
 
+        <component name="sw-snippet-field">
+            <name>snippetField</name>
+            <label>Allready Confirmed Text</label>
+            <snippet>jnlg-contact-form.confirmed</snippet>
+        </component>
+
+        <component name="sw-snippet-field">
+            <name>snippetField</name>
+            <label>Error MEssage</label>
+            <snippet>jnlg-contact-form.doesNotExist</snippet>
         </component>
     </card>
 </config>

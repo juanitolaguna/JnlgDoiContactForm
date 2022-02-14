@@ -1,0 +1,20 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% set state = data.all.state %}
+{% block base_content %}
+    <div class="container-main">
+        <h1 class="jnlg-doi-confirmation-message">
+            {% if state == 'confirm' %}
+                {{ 'jnlg-contact-form.confirm'|trans|raw }}
+            {% endif %}
+
+            {% if state == 'confirmed' %}
+                {{ 'jnlg-contact-form.confirmed'|trans|raw }}
+            {% endif %}
+
+            {% if state == 'doesNotExist' %}
+                {{ 'jnlg-contact-form.doesNotExist'|trans|raw }}
+            {% endif %}
+        </h1>
+    </div>
+{% endblock %}

@@ -13,9 +13,6 @@ use Shopware\Core\Framework\Plugin\Context\ActivateContext;
 
 class JnlgDoiContactForm extends Plugin
 {
-
-    private LoggerInterface $logger;
-
     /**
      * @throws LocaleException
      * @throws ErrorException
@@ -30,15 +27,5 @@ class JnlgDoiContactForm extends Plugin
         $languageRepository = $this->container->get('language.repository');
 
         (new Migration\Setup\DoiMailTemplateSetup($connection, $languageRepository))->createContactFormTemplate();
-    }
-
-    /**
-     * @param LoggerInterface $logger
-     *
-     * @required
-     */
-    public function setLogger(LoggerInterface $logger)
-    {
-        $this->logger = $logger;
     }
 }

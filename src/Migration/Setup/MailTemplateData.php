@@ -25,13 +25,16 @@ final class MailTemplateData
 
     private static function getTemplateContent(): array
     {
-        $template['en-GB']['plain'] = 'In order send your contact request please confirm your email by clicking this Link: {{ confirmationLink }}';
-        $template['de-DE']['plain'] = 'Bitte bestätige deine Email unter dem folgenden Link:{{ confirmationLink }}, damit deine Kontaktanfrage an uns versendet werden kann.';
+        $template['en-GB']['plain'] = 'In order send your contact request please confirm your email by clicking this Link: {{ contactFormData.confirmationLink }}';
+        $template['de-DE']['plain'] = 'Bitte bestätige deine Email unter dem folgenden Link:{{ contactFormData.confirmationLink }}, damit deine Kontaktanfrage an uns versendet werden kann.';
 
         $template['en-GB']['html'] = <<<HTML
         <div style="font-family:arial; font-size:12px;">
             <p>
-                In order send your contact request please confirm your email by clicking this Link: {{ confirmationLink }}, 
+                In order send your contact request please confirm your email by clicking this Link: 
+                <a href="{{ contactFormData.confirmationLink }}">
+                {{ contactFormData.confirmationLink }}
+                </a>
             </p>
         </div>
         HTML;
@@ -39,7 +42,11 @@ final class MailTemplateData
         $template['de-DE']['html'] = <<<HTML
         <div style="font-family:arial; font-size:12px;">
             <p>
-                Bitte bestätige deine Email unter dem folgenden Link:{{ confirmationLink }}, damit deine Kontaktanfrage an uns versendet werden kann.
+                Bitte bestätige deine Email unter dem folgenden Link:
+                 <a href="{{ contactFormData.confirmationLink }}">
+                {{ contactFormData.confirmationLink }}
+                </a>
+                ,damit deine Kontaktanfrage an uns versendet werden kann.
             </p>
         </div>
         HTML;

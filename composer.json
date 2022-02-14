@@ -21,8 +21,8 @@
   "extra": {
     "shopware-plugin-class": "JnlgDoiContactForm\\JnlgDoiContactForm",
     "label": {
-      "de-DE": "Double-opt-in Contact Form Plugin",
-      "en-GB": "Double-opt-in Contact Form Plugin"
+      "de-DE": "Double-Opt-In Contact Form Plugin",
+      "en-GB": "Double-Opt-In Contact Form Plugin"
     }
   }
 }
