@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>#JnlgDoiContactForm# Settings</title>
+        <title lang="de-DE">#JnlgDoiContactForm# Einstellungen</title>
+
+        <component name="sw-entity-single-select">
+            <name>mailTemplate</name>
+            <entity>mail_template</entity>
+            <label>Choose a Double Opt in Mail Template</label>
+            <labelProperty>id</labelProperty>
+
+        </component>
+    </card>
+</config>

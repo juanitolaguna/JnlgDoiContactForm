@@ -1,0 +1,28 @@
+{
+  "name": "jnlg/doi-contact-form",
+  "description": "DOI Contact Form Plugin",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "version": "0.0.1",
+  "authors":[
+    {
+      "name":"Pawel Snatenkov",
+      "email": "pawel.snatenkov@protonmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "JnlgDoiContactForm\\": "src/"
+    }
+  },
+  "require": {
+    "shopware/core": ">=6.4.5.0"
+  },
+  "extra": {
+    "shopware-plugin-class": "JnlgDoiContactForm\\JnlgDoiContactForm",
+    "label": {
+      "de-DE": "Double-opt-in Contact Form Plugin",
+      "en-GB": "Double-opt-in Contact Form Plugin"
+    }
+  }
+}

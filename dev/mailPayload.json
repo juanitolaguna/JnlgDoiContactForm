@@ -1,0 +1,43 @@
+{
+  "email": "test@example.com",
+  "phone": "1234567890",
+  "slotId": "ca8c3803264e415da27fa73b70e5cd8d",
+  "comment": "blah",
+  "privacy": "on",
+  "subject": "blah",
+  "lastName": "example",
+  "firstName": "test",
+  "entityName": "category",
+  "salutation": {
+    "id": "71a7ffd08df642a2a1a9c87c1de89262",
+    "createdAt": "2020-06-30T13:11:11.135+00:00",
+    "customers": null,
+    "updatedAt": "2020-12-20T18:51:17.729+00:00",
+    "versionId": null,
+    "extensions": {
+      "foreignKeys": {
+        "apiAlias": null,
+        "extensions": []
+      }
+    },
+    "letterName": "Sehr geehrter Herr",
+    "translated": {
+      "letterName": "Sehr geehrter Herr",
+      "displayName": "Herr",
+      "customFields": []
+    },
+    "displayName": "Herr",
+    "customFields": null,
+    "translations": null,
+    "salutationKey": "mr",
+    "orderAddresses": null,
+    "orderCustomers": null,
+    "_uniqueIdentifier": "71a7ffd08df642a2a1a9c87c1de89262",
+    "customerAddresses": null,
+    "newsletterRecipients": null
+  },
+  "_csrf_token": "48103df.ZgMt6v5OdeR1_Fr1K0u2YVGjWriHK4l9V2Grl6EDVBg.HDtls5YlN6wPjGKzbyPyMSXBD_DSf8ZFNATaz9Y2OndXaGiByCNHtjekMQ",
+  "navigationId": "50fe15f911f74469b30624eb3b6677d5",
+  "salutationId": "71a7ffd08df642a2a1a9c87c1de89262",
+  "shopware_surname_confirm": ""
+}
