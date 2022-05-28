@@ -26,6 +26,6 @@ class JnlgDoiContactForm extends Plugin
         /** @var EntityRepository $languageRepository */
         $languageRepository = $this->container->get('language.repository');
 
-        (new Migration\Setup\DoiMailTemplateSetup($connection, $languageRepository))->createContactFormTemplate();
+        //(new Migration\Setup\DoiMailTemplateSetup($connection, $languageRepository))->createContactFormTemplate();
     }
 }
